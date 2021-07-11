@@ -1,0 +1,555 @@
+{
+    "movies": [
+        {
+            "id": "mov0",
+            "title": "In the Heights",
+            "synopsis": "Lights up on Washington Heights...The scent of a cafecito caliente hangs in the air just outside of the 181st Street subway stop, where a kaleidoscope of dreams rallies this vibrant and tight-knit community. At the intersection of it all is the likeable, magnetic bodega owner Usnavi (Anthony Ramos), who saves every penny from his daily grind as he hopes, imagines and sings about a better life.",
+            "genre": "Drama, Romance, Music, Musical",
+            "runtime": 143,
+            "poster_small": "/images/movies/mov0/poster_small.jpg",
+            "poster_large": "/images/movies/mov0/poster_large.jpg",
+            "price_rent": 2.99,
+            "price_buy": 15.99,
+            "ratings": {
+                "metacritic": 84,
+                "rotten_tomatoes": 96
+            },
+            "is_featured": false,
+            "is_trending": true,
+            "genres": [
+                "Drama",
+                "Romance",
+                "Music",
+                "Musical"
+            ]
+        },
+        {
+            "id": "mov1",
+            "title": "Limbo",
+            "synopsis": "Limbo is a wry and poignant observation of the refugee experience, set on a fictional remote Scottish island where a group of new arrivals await the results of their asylum claims. It centers on Omar (Amir El-Masry), a young Syrian musician who is burdened by his grandfather\u2019s oud, which he has carried all the way from his homeland.",
+            "genre": "Drama",
+            "runtime": 104,
+            "poster_small": "/images/movies/mov1/poster_small.jpg",
+            "poster_large": "/images/movies/mov1/poster_large.jpg",
+            "price_rent": 1.99,
+            "price_buy": 17.99,
+            "ratings": {
+                "metacritic": 82,
+                "rotten_tomatoes": 92
+            },
+            "is_featured": false,
+            "is_trending": false,
+            "genres": [
+                "Drama"
+            ]
+        },
+        {
+            "id": "mov2",
+            "title": "The Sparks Brothers",
+            "synopsis": "How can one rock band be successful, underrated, hugely influential, and criminally overlooked all at the same time? Edgar Wright\u2019s debut documentary The Sparks Brothers, which features commentary from celebrity fans Flea, Jane Wiedlin, Beck, Jack Antonoff, Jason Schwartzman, Neil Gaiman, and more, takes audiences on a musical odyssey through five weird and wonderful decades with brothers/bandmates Ron and Russell Mael celebrating the inspiring legacy of Sparks: your favorite band\u2019s favorite band.",
+            "genre": "Music, Documentary",
+            "runtime": 140,
+            "poster_small": "/images/movies/mov2/poster_small.jpg",
+            "poster_large": "/images/movies/mov2/poster_large.jpg",
+            "price_rent": 3.99,
+            "price_buy": 15.99,
+            "ratings": {
+                "metacritic": 81,
+                "rotten_tomatoes": 96
+            },
+            "is_featured": true,
+            "is_trending": true,
+            "genres": [
+                "Music",
+                "Documentary"
+            ]
+        },
+        {
+            "id": "mov3",
+            "title": "No Sudden Move",
+            "synopsis": "Set in 1954 Detroit, No Sudden Move centers on a group of small-time criminals who are hired to steal what they think is a simple document. When their plan goes horribly wrong, their search for who hired them \u2013 and for what ultimate purpose \u2013 weaves them through all echelons of the race-torn, rapidly changing city.",
+            "genre": "Drama, Thriller, Crime",
+            "runtime": 90,
+            "poster_small": "/images/movies/mov3/poster_small.jpg",
+            "poster_large": "/images/movies/mov3/poster_large.jpg",
+            "price_rent": 3.99,
+            "price_buy": 13.99,
+            "ratings": {
+                "metacritic": 77,
+                "rotten_tomatoes": 89
+            },
+            "is_featured": false,
+            "is_trending": false,
+            "genres": [
+                "Drama",
+                "Thriller",
+                "Crime"
+            ]
+        },
+        {
+            "id": "mov4",
+            "title": "A Quiet Place Part II",
+            "synopsis": "Following the deadly events at home, the Abbott family (Emily Blunt, Millicent Simmonds, Noah Jupe) must now face the terrors of the outside world as they continue their fight for survival in silence. Forced to venture into the unknown, they quickly realize that the creatures that hunt by sound are not the only threats that lurk beyond the sand path.",
+            "genre": "Sci-Fi, Drama, Thriller, Horror",
+            "runtime": 97,
+            "poster_small": "/images/movies/mov4/poster_small.jpg",
+            "poster_large": "/images/movies/mov4/poster_large.jpg",
+            "price_rent": 2.99,
+            "price_buy": 11.99,
+            "ratings": {
+                "metacritic": 71,
+                "rotten_tomatoes": 91
+            },
+            "is_featured": true,
+            "is_trending": true,
+            "genres": [
+                "Sci-Fi",
+                "Drama",
+                "Thriller",
+                "Horror"
+            ]
+        },
+        {
+            "id": "mov5",
+            "title": "Black Widow",
+            "synopsis": "Natasha Romanoff aka Black Widow confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Pursued by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy and the broken relationships left in her wake long before she became an Avenger.",
+            "genre": "Action, Adventure, Superhero, Sci-Fi",
+            "runtime": 133,
+            "poster_small": "/images/movies/mov5/poster_small.jpg",
+            "poster_large": "/images/movies/mov5/poster_large.jpg",
+            "price_rent": 3.99,
+            "price_buy": 9.99,
+            "ratings": {
+                "metacritic": 67,
+                "rotten_tomatoes": 82
+            },
+            "is_featured": true,
+            "is_trending": true,
+            "genres": [
+                "Action",
+                "Adventure",
+                "Superhero",
+                "Sci-Fi"
+            ]
+        },
+        {
+            "id": "mov6",
+            "title": "Those Who Wish Me Dead",
+            "synopsis": "Hannah (Angelina Jolie), a smoke jumper still reeling from the loss of three lives she failed to save from a fire, comes across a traumatized 12-year-old boy with nowhere else to turn.",
+            "genre": "Action, Drama, Thriller",
+            "runtime": 100,
+            "poster_small": "/images/movies/mov6/poster_small.jpg",
+            "poster_large": "/images/movies/mov6/poster_large.jpg",
+            "price_rent": 3.99,
+            "price_buy": 17.99,
+            "ratings": {
+                "metacritic": 59,
+                "rotten_tomatoes": 62
+            },
+            "is_featured": true,
+            "is_trending": true,
+            "genres": [
+                "Action",
+                "Drama",
+                "Thriller"
+            ]
+        },
+        {
+            "id": "mov7",
+            "title": "Cruella",
+            "synopsis": "Set in 1970s London amidst the punk rock revolution, Cruella follows a young grifter named Estella (Emma Stone), a clever and creative girl determined to make a name for herself with her designs. She befriends a pair of young thieves who appreciate her appetite for mischief, and together they are able to build a life for themselves on the London streets. One day, Estella\u2019s flair for fashion catches the eye of the Baroness von Hellman (Emma Thompson), a fashion legend who is devastatingly chic and terrifyingly haute. But their relationship sets in motion a course of events and revelations that will cause Estella to embrace her wicked side and become the raucous, fashionable and revenge-bent Cruella.",
+            "genre": "Action, Thriller, Comedy",
+            "runtime": 134,
+            "poster_small": "/images/movies/mov7/poster_small.jpg",
+            "poster_large": "/images/movies/mov7/poster_large.jpg",
+            "price_rent": 3.99,
+            "price_buy": 9.99,
+            "ratings": {
+                "metacritic": 59,
+                "rotten_tomatoes": 74
+            },
+            "is_featured": false,
+            "is_trending": true,
+            "genres": [
+                "Action",
+                "Thriller",
+                "Comedy"
+            ]
+        },
+        {
+            "id": "mov8",
+            "title": "F9",
+            "synopsis": "Dom Toretto (Vin Diesel) is leading a quiet life off the grid with Letty and his son, little Brian, but they know that danger always lurks just over their peaceful horizon. This time, that threat will force Dom to confront the sins of his past if he\u2019s going to save those he loves most. His crew joins together to stop a world-shattering plot led by the most skilled assassin and high-performance driver they\u2019ve ever encountered: a man who also happens to be Dom\u2019s forsaken brother, Jakob (John Cena)",
+            "genre": "Action, Adventure, Thriller, Crime",
+            "runtime": 143,
+            "poster_small": "/images/movies/mov8/poster_small.jpg",
+            "poster_large": "/images/movies/mov8/poster_large.jpeg",
+            "price_rent": 4.99,
+            "price_buy": 10.99,
+            "ratings": {
+                "metacritic": 58,
+                "rotten_tomatoes": 60
+            },
+            "is_featured": false,
+            "is_trending": true,
+            "genres": [
+                "Action",
+                "Adventure",
+                "Thriller",
+                "Crime"
+            ]
+        },
+        {
+            "id": "mov9",
+            "title": "Wrath of Man",
+            "synopsis": "A mysterious and wild-eyed new cash truck security guard (Jason Statham) surprises his coworkers during a heist in which he unexpectedly unleashes precision skills. The crew is left wondering who he is and where he came from. Soon, the marksman\u2019s ultimate motive becomes clear as he takes dramatic and irrevocable steps to settle a score.",
+            "genre": "Action, Thriller",
+            "runtime": 119,
+            "poster_small": "/images/movies/mov9/poster_small.jpg",
+            "poster_large": "/images/movies/mov9/poster_large.jpg",
+            "price_rent": 3.99,
+            "price_buy": 12.99,
+            "ratings": {
+                "metacritic": 57,
+                "rotten_tomatoes": 66
+            },
+            "is_featured": false,
+            "is_trending": false,
+            "genres": [
+                "Action",
+                "Thriller"
+            ]
+        },
+        {
+            "id": "mov10",
+            "title": "Army of the Dead",
+            "synopsis": "When Scott Ward (Dave Bautista), a former zombie war hero who\u2019s now flipping burgers on the outskirts of the town he now calls home, is approached by casino boss Bly Tanaka (Hiroyuki Sanada), it\u2019s with the ultimate proposition: break into the zombie-infested quarantine zone to retrieve $200 million sitting in a vault beneath the strip before the city is nuked by the government in 32 hours. With little left to lose, Ward takes on the challenge, assembling a ragtag team of experts for the heist. With a ticking clock, a notoriously impenetrable vault, and a smarter, faster horde of Alpha zombies closing in, only one thing\u2019s for certain in the greatest heist ever attempted: survivors take all.",
+            "genre": "Action, Sci-Fi, Thriller, Horror",
+            "runtime": 148,
+            "poster_small": "/images/movies/mov10/poster_small.jpg",
+            "poster_large": "/images/movies/mov10/poster_large.jpg",
+            "price_rent": 1.99,
+            "price_buy": 17.99,
+            "ratings": {
+                "metacritic": 57,
+                "rotten_tomatoes": 68
+            },
+            "is_featured": false,
+            "is_trending": true,
+            "genres": [
+                "Action",
+                "Sci-Fi",
+                "Thriller",
+                "Horror"
+            ]
+        },
+        {
+            "id": "mov11",
+            "title": "The Conjuring: The Devil Made Me Do It",
+            "synopsis": "The revelation a chilling story of terror, murder and unknown evil that shocked even experienced real-life paranormal investigators Ed and Lorraine Warren. One of the most sensational cases from their files, it starts with a fight for the soul of a young boy, then takes them beyond anything they\u2019d ever seen before, to mark the first time in U.S. history that a murder suspect would claim demonic possession as a defense",
+            "genre": "Mystery, Thriller, Horror",
+            "runtime": 112,
+            "poster_small": "/images/movies/mov11/poster_small.jpg",
+            "poster_large": "/images/movies/mov11/poster_large.png",
+            "price_rent": 3.99,
+            "price_buy": 16.99,
+            "ratings": {
+                "metacritic": 53,
+                "rotten_tomatoes": 56
+            },
+            "is_featured": false,
+            "is_trending": false,
+            "genres": [
+                "Mystery",
+                "Thriller",
+                "Horror"
+            ]
+        }
+    ],
+    "series": [
+        {
+            "id": "ser0",
+            "title": "Bo Burnham: Inside",
+            "synopsis": "The musical comedy special was filmed by the comedian over the past year by himself, with no crew or audience.",
+            "genre": "Special, Comedy, Music",
+            "runtime": 143,
+            "poster_small": "/images/series/ser0/poster_small.jpg",
+            "poster_large": "/images/series/ser0/poster_large.jpg",
+            "price_rent": 3.99,
+            "price_buy": 9.99,
+            "ratings": {
+                "metacritic": 98,
+                "rotten_tomatoes": 94
+            },
+            "is_featured": false,
+            "is_trending": false,
+            "genres": [
+                "Special",
+                "Comedy",
+                "Music"
+            ]
+        },
+        {
+            "id": "ser1",
+            "title": "1971: The Year That Music Changed Everything",
+            "synopsis": "The eight-part documentary features archival footage and interviews about how musicians such as The Rolling Stones, Aretha Franklin, Marvin Gaye, Bob Marley, Joni Mitchell, Lou Reed and The Who influenced changes in culture and politics.",
+            "genre": "Mini-series, Documentary, Music",
+            "runtime": 45,
+            "poster_small": "/images/series/ser1/poster_small.jpg",
+            "poster_large": "/images/series/ser1/poster_large.jpg",
+            "price_rent": 2.99,
+            "price_buy": 9.99,
+            "ratings": {
+                "metacritic": 83,
+                "rotten_tomatoes": 100
+            },
+            "is_featured": false,
+            "is_trending": true,
+            "genres": [
+                "Mini-series",
+                "Documentary",
+                "Music"
+            ]
+        },
+        {
+            "id": "ser2",
+            "title": "We Are Lady Parts",
+            "synopsis": "PhD student Amina Hussain (Anjana Vasan) is convinced to join a Muslim female punk band named Lady Parts as its lead guitarist in the British music comedy created, written and directed by Nida Manzoor.",
+            "genre": "Comedy, Music",
+            "runtime": 30,
+            "poster_small": "/images/series/ser2/poster_small.jpg",
+            "poster_large": "/images/series/ser2/poster_large.jpg",
+            "price_rent": 2.99,
+            "price_buy": 14.99,
+            "ratings": {
+                "metacritic": 83,
+                "rotten_tomatoes": 100
+            },
+            "is_featured": false,
+            "is_trending": true,
+            "genres": [
+                "Comedy",
+                "Music"
+            ]
+        },
+        {
+            "id": "ser3",
+            "title": "Hacks",
+            "synopsis": "Deborah Vance (Jean Smart), a Las Vegas comedian, mentors Ava (Hannah Einbinder), a 25-year-old writer in this dark comedy from Paul W. Downs, Lucia Aniello and Jen Statsky.",
+            "genre": "Comedy, Drama",
+            "runtime": 30,
+            "poster_small": "/images/series/ser3/poster_small.jpg",
+            "poster_large": "/images/series/ser3/poster_large.jpg",
+            "price_rent": 2.99,
+            "price_buy": 13.99,
+            "ratings": {
+                "metacritic": 82,
+                "rotten_tomatoes": 100
+            },
+            "is_featured": true,
+            "is_trending": true,
+            "genres": [
+                "Comedy",
+                "Drama"
+            ]
+        },
+        {
+            "id": "ser4",
+            "title": "The White Lotus",
+            "synopsis": "The satirical limited series created by Mike White gradually reveals the truth behind the seemingly perfect guests and staff at an exclusive Hawaiian resort over the course of a week.",
+            "genre": "Comedy, Satire, Mini-series",
+            "runtime": 45,
+            "poster_small": "/images/series/ser4/poster_small.jpg",
+            "poster_large": "/images/series/ser4/poster_large.jpg",
+            "price_rent": 3.99,
+            "price_buy": 13.99,
+            "ratings": {
+                "metacritic": 82,
+                "rotten_tomatoes": 88
+            },
+            "is_featured": false,
+            "is_trending": false,
+            "genres": [
+                "Comedy",
+                "Satire",
+                "Mini-series"
+            ]
+        },
+        {
+            "id": "ser5",
+            "title": "Mare of Easttown",
+            "synopsis": "Mare Sheehan (Kate Winslet), a small-town Pennsylvania detective, investigates a murder even as her personal life is falling apart in this limited series created by Brad Ingelsby.",
+            "genre": "Drama, Thriller, Crime, Mini-series",
+            "runtime": 60,
+            "poster_small": "/images/series/ser5/poster_small.png",
+            "poster_large": "/images/series/ser5/poster_large.jpg",
+            "price_rent": 4.99,
+            "price_buy": 12.99,
+            "ratings": {
+                "metacritic": 82,
+                "rotten_tomatoes": 94
+            },
+            "is_featured": false,
+            "is_trending": true,
+            "genres": [
+                "Drama",
+                "Thriller",
+                "Crime",
+                "Mini-series"
+            ]
+        },
+        {
+            "id": "ser6",
+            "title": "Run The World",
+            "synopsis": "Set in Harlem, 30-somethings best friends Whitney (Amber Stevens West), Ella (Andrea Bordeaux), Renee (Bresha Webb) and Sondi (Corbin Reid) support each other with both personal and career issues in this series created by Leigh Davenport.",
+            "genre": "Comedy",
+            "runtime": 30,
+            "poster_small": "/images/series/ser6/poster_small.jpg",
+            "poster_large": "/images/series/ser6/poster_large.jpg",
+            "price_rent": 4.99,
+            "price_buy": 16.99,
+            "ratings": {
+                "metacritic": 81,
+                "rotten_tomatoes": 100
+            },
+            "is_featured": false,
+            "is_trending": false,
+            "genres": [
+                "Comedy"
+            ]
+        },
+        {
+            "id": "ser7",
+            "title": "Schmigadoon!",
+            "synopsis": "Melissa (Cecily Strong) and Josh (Keegan-Michael Key) go on a backpacking trip to help their relationship only to end up trapped in a town where everyone appears to be in a 1940s movie musical and they can only leave if they find their true love in this comedy inspired by Brigadoon.",
+            "genre": "Comedy, Fantasy, Music",
+            "runtime": 30,
+            "poster_small": "/images/series/ser7/poster_small.jpg",
+            "poster_large": "/images/series/ser7/poster_large.jpg",
+            "price_rent": 1.99,
+            "price_buy": 16.99,
+            "ratings": {
+                "metacritic": 77,
+                "rotten_tomatoes": 90
+            },
+            "is_featured": false,
+            "is_trending": false,
+            "genres": [
+                "Comedy",
+                "Fantasy",
+                "Music"
+            ]
+        },
+        {
+            "id": "ser8",
+            "title": "Loki",
+            "synopsis": "After stealing the Tesseract during the events of Avengers: Endgame (2019), an alternate version of Loki is brought to the mysterious Time Variance Authority (TVA), a bureaucratic organization that exists outside of time and space and monitors the timeline. They give Loki a choice: face being erased from existence due to being a 'time variant', or help fix the timeline and stop a greater threat. Loki ends up trapped in his own crime thriller, traveling through time and altering human history.",
+            "genre": "Action, Adventure, Superhero, Thriller, Sci-Fi",
+            "runtime": 45,
+            "poster_small": "/images/series/ser8/poster_small.jpg",
+            "poster_large": "/images/series/ser8/poster_large.jpg",
+            "price_rent": 2.99,
+            "price_buy": 8.99,
+            "ratings": {
+                "metacritic": 74,
+                "rotten_tomatoes": 92
+            },
+            "is_featured": true,
+            "is_trending": true,
+            "genres": [
+                "Action",
+                "Adventure",
+                "Superhero",
+                "Thriller",
+                "Sci-Fi"
+            ]
+        },
+        {
+            "id": "ser9",
+            "title": "Kevin Can F**k Himself",
+            "synopsis": "Allison McRoberts (Annie Murphy) has been living like a stereotypical sitcom housewife but after 10 years, she reaches her breaking point in this dark comedy created by Valerie Armstrong.",
+            "genre": "Black Comedy, Drama",
+            "runtime": 45,
+            "poster_small": "/images/series/ser9/poster_small.jpg",
+            "poster_large": "/images/series/ser9/poster_large.jpg",
+            "price_rent": 4.99,
+            "price_buy": 9.99,
+            "ratings": {
+                "metacritic": 65,
+                "rotten_tomatoes": 83
+            },
+            "is_featured": true,
+            "is_trending": false,
+            "genres": [
+                "Black Comedy",
+                "Comedy",
+                "Drama"
+            ]
+        },
+        {
+            "id": "ser10",
+            "title": "Marvel's M.O.D.O.K.",
+            "synopsis": "Supervillain M.O.D.O.K. (voiced by Patton Oswalt) has been kicked out as leader of his evil organization A.I.M. and struggles with family life in this animated adult comedy series based on the Marvel comic characters.",
+            "genre": "Animation, Comedy, Sci-Fi, Adventure",
+            "runtime": 30,
+            "poster_small": "/images/series/ser10/poster_small.jpg",
+            "poster_large": "/images/series/ser10/poster_large.jpg",
+            "price_rent": 1.99,
+            "price_buy": 12.99,
+            "ratings": {
+                "metacritic": 71,
+                "rotten_tomatoes": 88
+            },
+            "is_featured": false,
+            "is_trending": true,
+            "genres": [
+                "Animation",
+                "Comedy",
+                "Sci-Fi",
+                "Adventure"
+            ]
+        },
+        {
+            "id": "ser11",
+            "title": "Friends: The Reunion",
+            "synopsis": " The cast of 'Friends' return to the original soundstage where they filmed the series to reminisce and test their knowledge of the show against each other in the special that also includes appearances from many famous celebrities and guest cast members.",
+            "genre": "Special, Documentary",
+            "runtime": 104,
+            "poster_small": "/images/series/ser11/poster_small.jpg",
+            "poster_large": "/images/series/ser11/poster_large.jpg",
+            "price_rent": 3.99,
+            "price_buy": 14.99,
+            "ratings": {
+                "metacritic": 66,
+                "rotten_tomatoes": 67
+            },
+            "is_featured": true,
+            "is_trending": true,
+            "genres": [
+                "Special"
+            ]
+        }
+    ],
+    "genres": [
+        "Mini-series",
+        "Animation",
+        "Special",
+        "Drama",
+        "Crime",
+        "Mystery",
+        "Thriller",
+        "Comedy",
+        "Action",
+        "Documentary",
+        "Superhero",
+        "Satire",
+        "Horror",
+        "Musical",
+        "Adventure",
+        "Fantasy",
+        "Music",
+        "Black Comedy",
+        "Romance",
+        "Sci-Fi"
+    ]
+}

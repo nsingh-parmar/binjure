@@ -1,0 +1,102 @@
+.movie-card {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card, .card-default, #description.card, .card#poster-small {
+    font-family: 'DM Sans', sans-serif;
+    border-radius: 7px;
+    border: none;
+    background: linear-gradient(90deg, #3f93ffc4, #e95bee80);
+    opacity: 0.85;
+    color: white;
+    min-height: 30%;
+    align-items: center;
+}
+
+.card, .card-default, .card#poster-small {
+    margin: 30px !important;
+}
+
+.media-row .card {
+    width: 30%;
+}
+
+.card:hover, .card-default:hover {
+    opacity: 0.95;
+    cursor: pointer;
+    box-shadow: 0px 8px 8px -6px rgba(0, 0, 0, .5);
+}
+
+.card-text {
+    border-top: 2px solid white;
+    padding-top: 10px;
+}
+
+.card-header {
+    display: flex;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.card.card-header>h1, .card-header #text {
+    float: left;
+}
+
+.card-header>.icons, .card-header #ratings {
+    float: right;
+}
+
+.carousel-item .card {
+    margin: 30px auto 0 auto;
+}
+
+.footer .card {
+    width: auto;
+    background: #383838;
+    min-height: 90%;
+    align-items: center;
+}
+
+.user-form .card {
+    width: 70%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.card-buttons, .card-buttons-disabled {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: auto;
+}
+
+.card-buttons-disabled, .pills-disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.card-detail {
+    display: inline-flex;
+    color: white;
+    text-align: left;
+}
+
+#description.card, .footer .card, .user-form .card {
+    padding: 30px;
+}
+
+#poster .card-header {
+    padding: 10px;
+    text-align: center;
+}
+
+.info-contents .card-buttons {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#about-card {
+    padding: 30px;
+    color: white;
+    margin-bottom: 30px;
+}
