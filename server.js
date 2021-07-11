@@ -1,6 +1,6 @@
 const path = require("path");
 const express = require("express");
-const cors = require("cors");
+// const cors = require("cors");
 const jsonServer = require("json-server");
 
 const server = jsonServer.create();
@@ -9,7 +9,7 @@ const middleware = jsonServer.defaults();
 
 const PORT = process.env.PORT || 3000;
 
-server.use(cors());
+// server.use(cors());
 server.use("/api", middleware, router);
 server.use(express.static(path.join(__dirname, "build")));
 
