@@ -33,7 +33,7 @@ const Collection = (props) => {
                 </div>
             ))}
             {
-                ["movies", "shows"].includes(props.type) &&
+                ["featured movies", "featured shows"].includes(props.type) &&
                 <div className="card-buttons">
                     <Link to="/everything" className="pills">
                         View all
