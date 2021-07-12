@@ -103,6 +103,7 @@
     background: inherit;
   }
   .pills, #nav-buttons a, a.pills, .pills-disabled {
+    display: block;
     padding: 10px !important;
   }
 }
@@ -110,6 +111,19 @@
 @media screen and (max-width: 300px) {
   .carousel-container {
     display: none;
+  }
+  .pills, #nav-buttons a, a.pills, .pills-disabled {
+    display: block;
+    padding: 2px !important;
+  }
+}
+
+@media screen and (max-width: 275px) {
+  .navbar .navbar-brand {
+    font-size: 1.8em;
+  }
+  h1 {
+    font-size: 1em !important;
   }
 }
 
