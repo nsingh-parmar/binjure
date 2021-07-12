@@ -8,7 +8,7 @@ const SocialMedia = () => {
             <div className="icons centered"><a href="https://instagram.com"><FaInstagram /></a></div>
             <div className="icons centered"><a href="https://twitter.com"><FaTwitter /></a></div>
             <div className="icons centered"><a href="https://facebook.com"><FaFacebookF /></a></div>
-            <div className="icons centered"><a href="https://aedin.com"><FaLinkedinIn /></a></div>
+            <div className="icons centered"><a href="https://linkedin.com"><FaLinkedinIn /></a></div>
             <div className="icons centered"><a href="https://mail.google.com"><SiGmail /></a></div>
         </div>
     )
