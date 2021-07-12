@@ -32,7 +32,7 @@ const Genre = (props) => {
 
 
     return (
-        <Collection data={data} type="genres" />
+        <Collection data={data} type={`Genre: ${name}`} />
     )
 }
 
