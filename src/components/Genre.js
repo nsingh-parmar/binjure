@@ -13,13 +13,13 @@ const Genre = (props) => {
         synopsis: '',
         genres: [],
         runtime: 0,
-        poster_small: '',
-        poster_large: '',
-        price_rent: 0,
-        price_buy: 0,
+        smallPoster: '',
+        largePoster: '',
+        rentPrice: 0,
+        buyPrice: 0,
         ratings: { metacritic: 0, rotten_tomatoes: 0 },
-        is_featured: '',
-        is_trending: '',
+        featured: '',
+        trending: '',
     });
 
     useEffect(() => {
@@ -32,7 +32,7 @@ const Genre = (props) => {
 
 
     return (
-        <Collection data={data} type={`Genre: ${name}`} />
+        <Collection data={data} display={`Genre: ${name}`} type="genre" />
     )
 }
 

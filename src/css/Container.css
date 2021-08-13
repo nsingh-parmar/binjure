@@ -113,14 +113,23 @@
     float: left;
 }
 
-#description #ratings {
+#description #action-buttons {
     display: flex;
     float: right;
-    margin-top: -0.5rem;
-    margin-bottom: 0.5rem;
 }
 
-#ratings .icons {
+#action-buttons:hover {
+    cursor: pointer;
+}
+
+#description #ratings {
+    display: flex;
+    /* float: right; */
+    margin-top: 0.5rem;
+    /* margin-bottom: 0.5rem; */
+}
+
+#action-buttons .icons, #ratings .icons {
     height: 55px;
     width: 55px;
 }
@@ -172,4 +181,13 @@
     margin-left: auto;
     padding: 10px 10px;
     text-align: center;
+}
+
+#search-bar {
+    position: relative;
+    display: flex;
+}
+
+#search-bar .icons:hover {
+    cursor: pointer;
 }

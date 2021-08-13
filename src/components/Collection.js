@@ -3,6 +3,7 @@ import Media from './Media';
 import { Link } from 'react-router-dom';
 
 const Collection = (props) => {
+
     window.scrollTo(0, 0);
     let rows = [];
     const chunks = 4;
@@ -10,11 +11,10 @@ const Collection = (props) => {
         rows.push(props.data.slice(i, chunks + i));
     }
 
-
     return (
         <div className="media-container">
             <div className="media-title">
-                <h1>{props.type}</h1>
+                <h1>{props.display}</h1>
             </div>
             {rows.length === 0 && (<Media type="card-default" />)}
             {rows.map((row, i) => (
@@ -26,19 +26,28 @@ const Collection = (props) => {
                             type="card"
                             title={media.title}
                             description={media.synopsis}
-                            poster={media.poster_small}
+                            poster={media.smallPoster}
                             textOverImg={false}
                         />)
                     )}
                 </div>
             ))}
             {
-                ["featured movies", "featured shows"].includes(props.type) &&
+                ["movies", "series"].includes(props.type.toLowerCase()) &&
                 <div className="card-buttons">
-                    <Link to="/everything" className="pills">
-                        Access Everything
+                    <Link to={`/${props.type}/featured`} className="pills">
+                        View Featured
                     </Link>
                 </div>
+            }
+            {
+                props.hasOwnProperty("accessButtons") && props.accessButtons && (
+                    <div className="card-buttons">
+                        <Link to="/everything" className="pills">
+                            Access Everything
+                        </Link>
+                    </div>
+                )
             }
         </div>
     );

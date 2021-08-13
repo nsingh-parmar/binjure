@@ -42,7 +42,7 @@ const Carousel = (props) => {
                                 type="card"
                                 title={media.title}
                                 description={media.synopsis}
-                                poster={media.poster_large}
+                                poster={media.largePoster}
                                 textOverImg={true}
                             />
 

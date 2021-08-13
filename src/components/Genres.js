@@ -20,8 +20,8 @@ const Genres = (props) => {
                 <div className="media-row" key={i}>
                     {row.map((genre, j) => (
                         <div className="card" key={"" + i + j} >
-                            <Link to={`/genre/${genre}`} className="card-buttons">
-                                <h1>{genre}</h1>
+                            <Link to={`/genre/${genre.genre}`} className="card-buttons">
+                                <h1>{genre.genre}</h1>
                             </Link>
                         </div>
                     ))}

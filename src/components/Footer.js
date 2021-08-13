@@ -25,7 +25,7 @@ const Footer = () => {
                             </Link>
                         </div>
                         <div className="card-buttons">
-                            <Link to="/shows" className="pills">
+                            <Link to="/series" className="pills">
                                 TV Shows
                             </Link>
                         </div>
@@ -43,6 +43,16 @@ const Footer = () => {
                                 Genres
                             </Link>
                         </div>
+                        <div className="card-buttons">
+                            <Link to="/movies/featured" className="pills">
+                                Featured Movies
+                            </Link>
+                        </div>
+                        <div className="card-buttons">
+                            <Link to="/series/featured" className="pills">
+                                Featured Shows
+                            </Link>
+                        </div>
                     </div>
                     <div className="info-contents">
 
@@ -50,6 +60,11 @@ const Footer = () => {
                         <div className="card-buttons">
                             <Link to="/about" className="pills">
                                 About Us
+                            </Link>
+                        </div>
+                        <div className="card-buttons">
+                            <Link to="/create" className="pills">
+                                Add Your Own
                             </Link>
                         </div>
                         <div className="card-buttons">

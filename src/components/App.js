@@ -9,87 +9,147 @@ import Collection from './Collection';
 import About from './About';
 import Genre from './Genre';
 import Genres from './Genres';
+import CreateMedia from './CreateMedia';
+import Dashboard from './Dashboard';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import '../css/Card.css';
 import '../css/Container.css';
+import EditMedia from './EditMedia';
+
 
 function App() {
 
     const [movies, setMovies] = useState([]);
     const [series, setSeries] = useState([]);
     const [genres, setGenres] = useState([]);
+    const [allTrending, setAllTrending] = useState([]);
+    const [allMedia, setAllMedia] = useState([]);
+    const [featuredMovies, setFeaturedMovies] = useState([]);
+    const [featuredSeries, setFeaturedSeries] = useState([]);
+    const [searchResults, setSearchResults] = useState([]);
 
     useEffect(() => {
-        fetch("/api/movies")
+        fetch("https://binjure-backend.herokuapp.com/api/movies")
             .then((res) => {
                 return res.json();
             })
             .then((data) => {
-                setMovies(data);
+                const movieData = data.body;
+                setMovies(movieData);
             })
             .catch((err) => {
-                console.log(`Error ${err} while accessing Movies data`);
+                console.log(`Error while accessing Movies data: ${err} `);
+            });
+    }, []);
+    useEffect(() => {
+        fetch("https://binjure-backend.herokuapp.com/api/movies/where?featured=true")
+            .then((res) => {
+                return res.json();
+            })
+            .then((data) => {
+                const movieData = data.body;
+                setFeaturedMovies(movieData);
+            })
+            .catch((err) => {
+                console.log(`Error while accessing Featured Movies data: ${err} `);
+            });
+    }, []);
+    useEffect(() => {
+        fetch("https://binjure-backend.herokuapp.com/api/series")
+            .then((res) => {
+                return res.json();
+            })
+            .then((data) => {
+                const seriesData = data.body;
+                setSeries(seriesData);
+            })
+            .catch((err) => {
+                console.log(`Error while accessing Series data: ${err}`);
+            });
+    }, []);
+    useEffect(() => {
+        fetch("https://binjure-backend.herokuapp.com/api/series/where?featured=true")
+            .then((res) => {
+                return res.json();
+            })
+            .then((data) => {
+                const seriesData = data.body;
+                setFeaturedSeries(seriesData);
+            })
+            .catch((err) => {
+                console.log(`Error while accessing Featured Series data: ${err}`);
             });
     }, []);
 
     useEffect(() => {
-        fetch("/api/series")
+        fetch("https://binjure-backend.herokuapp.com/api/genres")
             .then((res) => {
                 return res.json();
             })
-            .then((data) => {
-                setSeries(data);
+            .then((genresData) => {
+                setGenres(genresData.body);
             })
             .catch((err) => {
-                console.log(`Error ${err} while accessing Series data`);
-            });
-    }, []);
-
-    useEffect(() => {
-        fetch("/api/genres")
-            .then((res) => {
-                return res.json();
-            })
-            .then((data) => {
-                setGenres(data);
-            })
-            .catch((err) => {
-                console.log(`Error ${err} while accessing Genres data`);
+                console.log(`Error while accessing Genres data: ${err}`);
             });
     }, []);
 
     const getTrending = (listOfObjects) => {
-        return listOfObjects.filter((media) => media.is_trending);
+        return listOfObjects.filter((media) => media.trending);
     }
-    const allTrending = getTrending([...movies, ...series]);
-    const allMedia = [...movies, ...series];
-    const featuredMovies = movies.filter(movie => movie.is_featured);
-    const featuredSeries = series.filter(serie => serie.is_featured);
+
+    useEffect(() => {
+        const allMediaData = [...movies, ...series];
+        setAllMedia(allMediaData);
+        setAllTrending(getTrending(allMediaData));
+    }, [movies, series]);
+
+    const checkCurrentUser = () => {
+        const userSession = window.sessionStorage.getItem("uid");
+        if (userSession) {
+            const userInStore = JSON.parse(userSession).id;
+            if (userInStore) {
+                return true;
+            } else return false;
+        } else return false;
+    };
+    const signOutUser = () => {
+        sessionStorage.removeItem("uid");
+        alert("Signed out!");
+        window.location = "https://binjure.herokuapp.com/";
+    }
+
 
     window.scrollTo(0, 0);
 
     return (
         <>
             <Router>
-                <Header />
+                <Header authorize={checkCurrentUser} signOutHandler={signOutUser} searchSetter={setSearchResults} />
                 <Switch>
                     <Route exact path="/">
-                        <Carousel data={allTrending} />
-                        <Collection data={featuredMovies} type="featured movies" />
-                        <Collection data={featuredSeries} type="featured shows" />
-                        <Genres data={genres} type="genres" />
+                        {allTrending.length !== 0 && <Carousel data={allTrending} />}
+                        {featuredMovies.length !== 0 && <Collection data={featuredMovies} display="featured movies" type="movies" accessButtons={true} />}
+                        {featuredSeries.length !== 0 && <Collection data={featuredSeries} display="featured series" type="series" accessButtons={true} />}
+                        {genres.length !== 0 && <Genres data={genres} type="genres" />}
                     </Route>
                     <Route path="/movie/:id" children={<Detail mediaType="movies" />}></Route>
                     <Route path="/tv/:id" children={<Detail mediaType="series" />}></Route>
                     <Route path="/everything">
-                        <Collection data={allMedia} type="everything" />
+                        <Collection data={allMedia} type="everything" display="everything" />
+                    </Route>
+                    <Route path="/movies/featured">
+                        <Collection data={featuredMovies} type="featured movies" display="Movies Featured" accessButtons={true} />
+                    </Route>
+                    <Route path="/series/featured">
+                        <Collection data={featuredSeries} type="featured series" display="series Featured" accessButtons={true} />
                     </Route>
                     <Route path="/movies">
-                        <Collection data={movies} type="all movies" />
+                        <Collection data={movies} type="movies" display="all movies" accessButtons={false} />
                     </Route>
-                    <Route path="/shows">
-                        <Collection data={series} type="all series" />
+                    <Route path="/series">
+                        <Collection data={series} type="series" display="all series" accessButtons={false} />
                     </Route>
                     <Route path="/genres">
                         <Genres data={genres} type="genres" />
@@ -105,6 +165,25 @@ function App() {
                     </Route>
                     <Route path="/about">
                         <About />
+                    </Route>
+                    <Route path="/create">
+                        <CreateMedia />
+                    </Route>
+                    <Route path="/search">
+                        <Collection data={searchResults} type="everything" display="Search results" accessButtons={false} />
+                    </Route>
+                    <Route path="/edit/movies/:mediaID">
+                        <EditMedia mediaType="movies" />
+                    </Route>
+                    <Route path="/edit/series/:mediaID">
+                        <EditMedia mediaType="series" />
+                    </Route>
+                    <Route>
+                        {checkCurrentUser() ? (
+                            <Dashboard data={allMedia} />
+                        ) : (
+                            <PageNotFound />
+                        )}
                     </Route>
                     <Route path="*">
                         <PageNotFound />

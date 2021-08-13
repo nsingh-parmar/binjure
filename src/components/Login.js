@@ -17,9 +17,50 @@ const Login = () => {
 
     const submitHandler = (e) => {
         e.preventDefault();
-        const allDetailsFilled = emailRef.current.value.trim() && passRef.current.value.trim()
+        const emailValue = emailRef.current.value.trim();
+        const passValue = passRef.current.value.trim();
+        const allDetailsFilled = emailValue && passValue;
         if (allDetailsFilled) {
-            history.push("/");
+            const userData = {
+                email: emailValue,
+                password: passValue
+            };
+            const payload = {
+                method: "POST",
+                headers: {
+                    Accept: "application/json",
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(userData),
+            };
+
+            fetch("https://binjure-backend.herokuapp.com/authenticate", payload)
+                .then((response) => {
+                    console.log("Authenticating User");
+                    return response.json();
+                })
+                .then((dataObj) => {
+                    if (dataObj.hasOwnProperty("body")) {
+                        if (dataObj.body.length === 1) {
+                            alert("Login Success!");
+                            const user = { "id": dataObj.body[0] };
+                            sessionStorage.setItem("uid", JSON.stringify(user));
+                            window.location = "https://binjure.herokuapp.com/dashboard";
+                        }
+                    } else {
+                        if (dataObj.hasOwnProperty("message")) {
+                            alert(dataObj.message);
+                        } else if (dataObj.hasOwnProperty("status")) {
+                            alert("Authentication failed.");
+                        }
+                    }
+                })
+                .catch((reason) => {
+                    console.log(reason);
+                    alert(`Sorry, we could not authenticate you.`);
+                });
+        } else {
+            alert("Please fill all the details!");
         }
     };
 
