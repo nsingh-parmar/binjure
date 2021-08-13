@@ -66,10 +66,21 @@ const Register = () => {
                 fetch("https://binjure-backend.herokuapp.com/api/users", payload)
                     .then((response) => {
                         console.log("Creating User");
+                        return response.json();
                     })
-                    .then(() => {
-                        alert("You have been registered. Welcome!")
-                        history.push("/login");
+                    .then((dataObj) => {
+                        console.log(dataObj);
+                        if (dataObj.hasOwnProperty("body")) {
+                            if (dataObj.body) {
+                                alert("You have been registered. Welcome!")
+                                history.push("/login");
+                            } else {
+                                if (dataObj.hasOwnProperty("message")) {
+                                    alert(dataObj.message);
+                                }
+                            }
+                        }
+
                     })
                     .catch((reason) => {
                         alert(`Could not create user because: ${reason}`);
