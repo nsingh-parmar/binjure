@@ -69,7 +69,6 @@ const Register = () => {
                         return response.json();
                     })
                     .then((dataObj) => {
-                        console.log(dataObj);
                         if (dataObj.hasOwnProperty("body")) {
                             if (dataObj.body) {
                                 alert("You have been registered. Welcome!")
